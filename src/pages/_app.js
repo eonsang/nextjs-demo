@@ -1,20 +1,10 @@
 import React from 'react';
 import { wrapper } from '../store';
-import { createGlobalStyle, ThemeProvider } from 'styled-components';
+import { ThemeProvider } from 'styled-components';
+import GlobalStyle from '../components/globalStyle';
+import theme from '../utils/theme';
 
-const GlobalStyle = createGlobalStyle`
-  body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-`;
 
-const theme = {
-  colors: {
-    primary: '#0070f3',
-  },
-}
 
 function MyApp({ Component, pageProps }) {
   return (
